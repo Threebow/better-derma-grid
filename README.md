@@ -10,7 +10,7 @@ frame:SetSize(800, 500)
 frame:Center()
 frame:MakePopup()
 
-local grid = vgui.Create("ArionGrid", frame)
+local grid = vgui.Create("ThreeGrid", frame)
 grid:Dock(FILL)
 grid:DockMargin(4, 4, 4, 4)
 grid:InvalidateParent(true)
