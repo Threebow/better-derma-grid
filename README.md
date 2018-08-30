@@ -8,7 +8,7 @@ Put it in clientside autorun
 
 Initialize the panel, and set its columns - the amount of columns will dictate how many items are on each row.
 ```lua
-local grid = vgui.Create("ThreesGrid")
+local grid = vgui.Create("ThreeGrid")
 grid:SetColumns(3)
 ```
 
