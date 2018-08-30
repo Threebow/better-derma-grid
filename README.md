@@ -25,6 +25,7 @@ Want spacing between your grid cells?
 grid:SetHorizontalMargin(5) //5 pixels of space between each item on a row, horizontally
 grid:SetVerticalMargin(10) //10 pixels of space between each row, vertically
 ```
+This is the equivalent of `DIconLayout`'s `SetSpaceX` and `SetSpaceY`
 
 # Clearing
 You can get rid of everything in a grid by using:
