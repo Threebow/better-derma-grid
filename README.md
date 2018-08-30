@@ -5,6 +5,11 @@ Replacement for Gmod's DIconLayout that isn't buggy and hard to use
 ![](http://www.threebow.com/i/589988ffa954.png)
 
 ```lua
+local frame = vgui.Create("DFrame")
+frame:SetSize(800, 500)
+frame:Center()
+frame:MakePopup()
+
 local grid = vgui.Create("ArionGrid", frame)
 grid:Dock(FILL)
 grid:DockMargin(4, 4, 4, 4)
@@ -15,11 +20,9 @@ grid:SetHorizontalMargin(2)
 grid:SetVerticalMargin(2)
 
 for i=1, 10 do
-    if(i == 4) then grid:SetColumns(4) elseif(i == 9) then grid:SetColumns(2) end
-
-    local pnl = vgui.Create("DPanel")
-    pnl:SetTall(100)
-    grid:AddCell(pnl)
+	local pnl = vgui.Create("DPanel")
+	pnl:SetTall(100)
+	grid:AddCell(pnl)
 end
 ```
 
