@@ -2,7 +2,7 @@
 Replacement for Gmod's DIconLayout that isn't buggy and hard to use
 
 # Example
-![](http://www.threebow.com/i/589988ffa954.png)
+![](http://www.threebow.com/i/3bb7de21c088.png)
 
 ```lua
 local frame = vgui.Create("DFrame")
