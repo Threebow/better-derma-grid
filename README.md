@@ -1,6 +1,28 @@
 # Better Derma Grid
 Replacement for Gmod's DIconLayout that isn't buggy and hard to use
 
+# Example
+![](http://www.threebow.com/i/589988ffa954.png)
+
+```lua
+local grid = vgui.Create("ArionGrid", frame)
+grid:Dock(FILL)
+grid:DockMargin(4, 4, 4, 4)
+grid:InvalidateParent(true)
+
+grid:SetColumns(3)
+grid:SetHorizontalMargin(2)
+grid:SetVerticalMargin(2)
+
+for i=1, 10 do
+    if(i == 4) then grid:SetColumns(4) elseif(i == 9) then grid:SetColumns(2) end
+
+    local pnl = vgui.Create("DPanel")
+    pnl:SetTall(100)
+    grid:AddCell(pnl)
+end
+```
+
 # Installation
 Put it in clientside autorun
 
