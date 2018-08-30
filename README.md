@@ -15,3 +15,10 @@ local pnl = vgui.Create("DPanel")
 pnl:SetTall(100)
 grid:AddCell(pnl)
 ```
+
+# Spacing
+Want spacing between your grid cells?
+```lua
+grid:SetHorizontalMargin(5) //5 pixels of space between each item on a row, horizontally
+grid:SetVerticalMargin(10) //10 pixels of space between each row, vertically
+```
