@@ -1,6 +1,9 @@
 # Better Derma Grid
 Replacement for Gmod's DIconLayout that isn't buggy and hard to use
 
+# Installation
+Put it in clientside autorun
+
 # Usage
 
 Initialize the panel, and set its columns - the amount of columns will dictate how many items are on each row.
