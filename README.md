@@ -25,3 +25,15 @@ Want spacing between your grid cells?
 grid:SetHorizontalMargin(5) //5 pixels of space between each item on a row, horizontally
 grid:SetVerticalMargin(10) //10 pixels of space between each row, vertically
 ```
+
+# Clearing
+You can get rid of everything in a grid by using:
+```lua
+grid:Clear()
+```
+
+# Misc
+Normally, adding cells to the table goes on a left to right, top to down basis, so if you want to add a completely empty cell for spacing reasons or whatever, you can use:
+```lua
+grid:Skip()
+```
