@@ -43,6 +43,7 @@ local pnl = vgui.Create("DPanel")
 pnl:SetTall(100)
 grid:AddCell(pnl)
 ```
+If you need to position child panels based on the cell's size, note that `GetWide` will return the correct width of the panel right after you call `AddCell`.
 
 # Spacing
 Want spacing between your grid cells?
