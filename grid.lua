@@ -22,7 +22,6 @@ function PANEL:AddCell(pnl)
 	pnl:SetParent(self.Rows[idx])
 	pnl:Dock(LEFT)
 	pnl:DockMargin(0, 0, #self.Rows[idx].Items+1 < cols && self:GetHorizontalMargin() || 0, 0)
-	pnl:SetWide((self:GetWide()-margin*(cols-1))/cols)
 
 	table.insert(self.Rows[idx].Items, pnl)
 	table.insert(self.Cells, pnl)
@@ -62,8 +61,7 @@ function PANEL:Clear()
 		row:Remove()
 	end
 
-	table.Empty(self.Cells)
-	table.Empty(self.Rows)
+	self.Cells, self.Rows = {}, {}
 end
 
 PANEL.OnRemove = PANEL.Clear
