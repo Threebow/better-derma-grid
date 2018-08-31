@@ -55,9 +55,14 @@ function PANEL:Skip()
 end
 
 function PANEL:Clear()
-	for k, v in pairs(self.Cells) do
-		v:Remove()
+	for _, row in pairs(self.Rows) do
+		for _, cell in pairs(row.Items) do
+			cell:Remove()
+		end
+		row:Remove()
 	end
+
+	table.Empty(self.Cells)
 	table.Empty(self.Rows)
 end
 
